@@ -14,8 +14,6 @@
 	<body>
 		<!-- Navbar -->
 		<nav class="nav container void-background">
-			<!-- This "nav-menu" is hidden on mobile -->
-			<!-- Add the modifier "is-active" to display it on mobile -->
 			<div class="nav-left">
 				<a href="mailto:shivakrishna.cy21@sahyadri.edu.in" target="_blank" class="nav-item">
 					<span class="icon">
@@ -33,43 +31,62 @@
 					</span>
 				</a>				
 			</div>
-
 			<div class="nav-right nav-menu">
 				<a class="nav-item" href="https://www.deviceinfo.me/" target="_blank">About you!</a>
 				<a class="nav-item" href="#projects">Projects</a>
 				<a class="nav-item" href="#social">Social</a>
 			</div>
-
-			<!-- This "nav-toggle" hamburger menu is only visible on mobile -->
-			<!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
-			<span class="nav-toggle">
-				<span></span>
-				<span></span>
-				<span></span>
-			</span>
 		</nav>
 				
 		<!-- About Me -->
 		<section id="about" class="section section-1">
 			<div class="container has-text-centered">
-				<!-- Source: https://flic.kr/p/pAZBNK -->
 				<img class="avatar" src="assets/img/profile.png">
 			</div>
 			<div class="container"></br>
 				<p class="intro">
-					
 					I'm <b>Shivakrishna,</b> a 3rd year B.E. CSE(Cyber Security) student from Mangalore. 
 				</p>
 			</div>
 		</section>
 		
+		<!-- Education Section -->
+		<section id="education" class="section section-2">
+			<div class="container">
+				<div class="has-text-centered">
+					<h3 class="title is-3">Education</h3>
+				</div>
+				<div>
+					<p><b>Sahyadri College of Engineering and Management</b><br>Bachelor of Engineering in Computer Science and Engineering (Cyber Security)<br>CGPA: 8.92 (2021 - Present)</p>
+					<p><b>K.V.G Amarajyothi PU College (DPUE)</b><br>Pre-University - PCMC<br>Percentage: 100% (2019 - 2021)</p>
+					<p><b>Kumaraswamy Vidyalaya (KSEEB)</b><br>Primary and Secondary Education<br>Percentage: 98.24% (2009 - 2019)</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Experience Section -->
+		<section id="experience" class="section section-2">
+			<div class="container">
+				<div class="has-text-centered">
+					<h3 class="title is-3">Experience</h3>
+				</div>
+				<div>
+					<p><b>Cyber Security Intern</b><br>CoE Digital Forensics Intelligence and Cyber Security<br>October 2023 - November 2023, Sahyadri Campus, Mangaluru</p>
+					<ul>
+						<li>Developed a CTF website using PHP, HTML, and CSS.</li>
+						<li>Explored fundamental concepts in cybersecurity, including secure coding, access control, and vulnerability management.</li>
+						<li>Worked with Kali Linux for penetration testing and ethical hacking.</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
 		<!-- Projects -->
-		<section  id="projects" class="section section-2">
+		<section id="projects" class="section section-2">
 			<div class="container">
 				<div class="has-text-centered">
 					<h3 class="title is-3">Projects</h3>
 				</div>
-				
 				<div class="columns is-multiline is-desktop">
 					<!-- Project 1 -->
 					<div class="column">
@@ -80,19 +97,24 @@
 										<img src="assets/img/project-1.png" alt="Image">
 									</figure>
 								</div>
-								<div>			
+								<div>
 									<p>
-										<b>Tree Detection using ML</b> <br>
+										<b>Tree Detection using ML</b><br>
 										<a href="https://github.com/22bsk/miniProject1_tree_detection" target="_blank" class="nav-item">
 											<span class="icon">
 												<i class="fa fa-link"></i>
 											</span>
 										</a>
 									</p>
+									<ul>
+										<li>Developed a model to detect and count the number of trees in an aerial image.</li>
+										<li>Trained the Roboflow API by annotating images and used YOLOv8 for object detection.</li>
+									</ul>
 								</div>
 							</article>
 						</div>
 					</div>
+					
 					<!-- Project 2 -->
 					<div class="column">
 						<div class="box project-text">
@@ -102,20 +124,59 @@
 										<img src="assets/img/project-2.jpg" alt="Image">
 									</figure>
 								</div>
-								<div>			
+								<div>
 									<p>
-										<b>CTF website</b>   <br>
+										<b>CTF Website</b><br>
 										<a href="https://github.com/22bsk/local_ctf_webpage" target="_blank" class="nav-item">
 											<span class="icon">
 												<i class="fa fa-link"></i>
 											</span>
 										</a>
-										
+									</p>
+									<ul>
+										<li>Developed a web application for solving CTF challenges using PHP, HTML, CSS, and MySQL.</li>
+										<li>Added simple Linux-based challenges.</li>
+									</ul>
+								</div>
+							</article>
+						</div>
+					</div>
+
+					<!-- Project 3 -->
+					<div class="column">
+						<div class="box project-text">
+							<article>
+								<div>
+									<figure class="image project-figure">
+										<img src="assets/img/project-3.jpg" alt="Image">
+									</figure>
+								</div>
+								<div>
+									<p>
+										<b>Advanced Malware Detection</b><br>
+										<ul>
+											<li>Developing a project to detect polymorphic malware using Machine Learning.</li>
+											<li>Using the Random Forest algorithm to detect malicious code in PE headers of files.</li>
+										</ul>
 									</p>
 								</div>
 							</article>
 						</div>
 					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Technical Skills -->
+		<section id="skills" class="section section-3">
+			<div class="container">
+				<div class="has-text-centered">
+					<h3 class="title is-3">Technical Skills</h3>
+				</div>
+				<div>
+					<p><b>Languages:</b> Java, C, C++, HTML, CSS, SQL</p>
+					<p><b>Developer Tools:</b> Google Cloud Platform, VS Code, Visual Studio, Eclipse, Linux, Microsoft Azure, Docker</p>
+					<p><b>Certifications/Courses:</b> Google Cybersecurity (Coursera), SQL (HackerRank), Google Arcade (GCP), Cyber Security Fundamentals & Python Fundamentals (Infosys SpringBoard)</p>
 				</div>
 			</div>
 		</section>
@@ -132,16 +193,6 @@
 					</div>
 					<div class="column is-6 has-text-centered">
 						<a target="_blank" href="https://www.facebook.com/shivakrishna.belari"><img class="" src="assets/img/facebook.png"></a>
-						<span class="icon">
-							<i class="fa fa-linkedin"></i>
-						</span>
-						<span class="icon">
-							<i class="fa fa-instagram"></i>
-						</span>
-						<span class="icon">
-							<i class="fa fa-facebook"></i>
-						</span>
-						
 					</div>
 				</div>
 			</div>
@@ -149,7 +200,7 @@
 		
 		<!-- Footer -->
 		<section class="section-4 has-text-centered container">
-			
+			<p>© 2024 Shivakrishna B S</p>
 		</section>
 		
 		<!-- Scripts  -->
